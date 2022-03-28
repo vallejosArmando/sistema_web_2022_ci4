@@ -10,7 +10,7 @@
 
 <body>
  <h3>
-  estoy en master
+  estoy en main
  </h3>
 </body>
 
