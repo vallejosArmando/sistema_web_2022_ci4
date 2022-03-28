@@ -1,0 +1,32 @@
+<?= $this->extend('layouts/frontend6.php') ?>
+<?= $this->section('card') ?>
+
+<form action="conexion6.php" id="form1" name="form1" method="post">
+    <fieldset>
+        <legend class="leg">Form. 6 [Horario de los plomeros]</legend>
+
+
+
+        Hora_entrada: <br>
+        <input type="time" name="hora_entrada" id="hora_entrada"> Hora_salida: <br>
+        <input type="time" name="hora_salida" id="hora_salida"> Dias:<br>
+        <input type="number" name="dias" id="dias"> plomero: <br>
+        <select name="id_plomero" id="id_plomero">
+            <option value="">plomero</option>
+         
+                <option></option>
+
+        </select> <br>
+
+
+
+        <div class="ubi_boton">
+            <input type="button" value="ENVIAR" class="boton" onclick="validar();">
+            <input type="reset" value="BORRAR" class="boton">
+        </div>
+    </fieldset>
+    <a href="principal2.php"><span class="icon icon-home3">Inicio</span></a>
+</form>
+<?= $this->endsection() ?><?= $this->section('script') ?>
+<script type="text/javascript" src="<?= base_url() ?>/public/js/vali6.js"></script>
+<?= $this->endsection() ?>

@@ -1,0 +1,25 @@
+<?= $this->extend('layouts/frontend6.php') ?>
+<?= $this->section('card') ?>
+
+
+<form action="conexion1.php" id="form1" name="form1" method="post">
+    <fieldset class="fi">
+        <legend class="leg">Form. 1 [Nombre del sistema y creador]</legend>
+
+
+        Nombre del sistema: <br>
+        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="----------"> Nombre del creador: <br>
+        <input type="text" name="nombre_creador" id="nombre_creador" maxlength="30" placeholder="----------">
+
+        <input type="button" value="ENVIAR" class="boton" onclick="validar();">
+        <input type="reset" value="BORRAR" class="boton">
+
+
+    </fieldset>
+    <a href="principal2.php"><span class="icon icon-home3">Inicio</span></a>
+</form>
+
+<?= $this->endsection() ?>
+<?= $this->section('script') ?>
+<script type="text/javascript" src="<?= base_url() ?>/public/js/vali1.js"></script>
+<?= $this->endsection() ?>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+body{
+ font-family: "Open Sans",sans-serif;
+
+}
+#nav-checkbox,.trancicion{
+ display:none;
+}
+.contenido{
+ background:linear-gradient(rgba(0, 0, 0, 0.322),rgba(0,0,0,0.6)),url("foto/cosal3.jpg") no-repeat fixed bottom / cover;
+ min-height:100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+
+}
+.contenido h1{
+ color: #fff;
+ font-size:60px;
+ line-height:1;
+
+}
+.contenido h3{
+color: #fff;
+font-size:26px;
+font-weight:normal; 
+margin:15px 0;
+
+
+}
+.contenido a{
+ background:#cc0000;
+ color: #fff;
+ text-decoration:none;
+ font-size:1.5rem;
+ border-radius:3px;
+ line-height:1;
+ padding:10px 18px;
+
+}
+.contenido a:hover{
+ background: #a8f346;
+}
+.carga{
+ width:80%;
+ margin: auto;
+ padding: 50px 0;
+
+}
+.carga p{
+ line-height:1.6;
+ margin-bottom: 25px;
+
+}
+header{
+  position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ display:flex;
+ align-items:center;
+ justify-content:space-around;
+ padding:20px 0;
+    
+ transition: background-color 0.5s ease;
+  background: #343a40!important;
+ 
+}
+
+.logo h2{
+ text-transform: uppercase;
+
+    color: white;
+    font-family: Arial,sans-serif;
+}
+.logo h2:hover{
+  color:rgb(192, 187, 123);
+}
+.nav-menu li{
+ display:inline-block;
+}
+.nav-menu li a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 1rem;
+ padding: 0 15px;
+}
+.nav-menu li a:hover{
+ color:#92e45b;
+}
+.rojo{
+ background:#cc0000!important;
+}
+.rojo a:hover{
+ color:rgb(104, 255, 44) !important;
+}
+
+.negro a:hover{
+ color:#fff !important;
+}
+
+@media only screen and (max-width: 600px){
+ header{
+  display: block;
+ }
+ .logo{
+  margin-left: 15px;
+ }
+
+.trancicion{
+ display: block;
+ position:absolute;
+ cursor: pointer;
+ margin: 0 1rem;
+ top:25px;
+ right:0;
+
+
+}
+.trancicion img{
+ width: 25px;
+}
+.close,input[type='checkbox']{
+ display: none;
+
+}
+#nav-checkbox:Checked~.nav-menu{
+ background:#a5a3a3;
+ margin-top:10px;
+ padding:10px 0;
+ border-top:1px solid #fff;
+}
+.nav-menu li{
+ display: none;
+ margin: 10px 0;
+
+}
+#nav-checkbox:checked~ul.nav-menu li{
+ display: block;
+}
+#nav-checkbox:checked~label.trancicion .open{
+ display: none;
+}
+#nav-checkbox:checked~label.trancicion .close{
+ display: block;
+}
+.contenido h1{
+ font-size:46px;
+}
+.contenido h3{
+  font-size:22px;
+}
+
+}

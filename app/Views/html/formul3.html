@@ -1,0 +1,51 @@
+<?= $this->extend('layouts/frontend6.php') ?>
+<?= $this->section('card') ?>
+
+<form action="conexion3.php" id="form1" name="form1" method="post">
+    <fieldset>
+        <legend class="leg">Form. 3 [Usuarios de Cosaalt]</legend>
+
+
+
+
+        <br>Nombre del usuario de cosalt: <br>
+        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombres">
+
+        <br>Apellido paterno: <br>
+        <input type="text" name="ap_paterno" id="ap_paterno" maxlength="30" placeholder="Apellido P.">
+
+        <br>Apellido materno: <br>
+        <input type="text" name="ap_materno" id="ap_materno" maxlength="30" placeholder="Apellido M.">
+
+        <br>Telefono: <br>
+        <input type="text" name="telefono" id="telefono" maxlength="30" placeholder="0000000">
+
+        <br>Correo_electronico: <br>
+        <input type="text" name="correo_electronico" id="correo_electronico" placeholder="@gmail.com">
+
+
+        <br>Codigo del usuario: <br>
+        <input type="text" name="codigo_usuario" id="codigo_usuario" maxlength="30">
+
+        <br>Direccion: <br>
+        <input type="text" name="direccion" id="direccion" maxlength="90" placeholder="Lugar don de vive">
+
+        <br>id_sistema_reclamo: <br>
+        <select name="id_sistema_reclamo" id="id_sistema_reclamo">
+            <option value="">id_sistema</option>
+           
+                <option value=""></option>
+        </select> <br>
+
+
+        <div class="ubi_boton">
+            <input type="button" value="ENVIAR" class="boton" onclick="validar();">
+            <input type="reset" value="BORRAR" class="boton">
+        </div>
+    </fieldset>
+    <a href=" principal2.php "><span class="icon icon-home3">Inicio</span></a>
+</form>
+
+<?= $this->endsection() ?><?= $this->section('script') ?>
+<script type="text/javascript" src="<?= base_url() ?>/public/js/vali3.js"></script>
+<?= $this->endsection() ?>

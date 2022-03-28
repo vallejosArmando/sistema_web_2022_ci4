@@ -1,0 +1,55 @@
+<?= $this->extend('layouts/frontend6.php') ?>
+<?= $this->section('card') ?>
+<form action="conexion4.php" id="form1" name="form1" method="post">
+    <fieldset>
+        <legend class="leg">Form. 4 [Descripcion del reclamo]</legend>
+
+
+
+
+
+        <br>Barrio: <br>
+        <input type="text" name="barrio" id="barrio" maxlength="40" placeholder="----------" ;>
+
+        <br>Calle o avenida: <br>
+        <input type="text" name="calle_avenida" id="calle_avenida" maxlength="40" placeholder="----------">
+
+        <br>Entre que calles: <br>
+        <input type="text" name="entre_que_calles" id="entre__que_calles" maxlength="400" placeholder="----------">
+
+        <br>Referencias: <br>
+        <input type="text" name="referencias" id="referencias" maxlength="40" placeholder="----------">
+
+        <br>Otro recurrente: <br>
+        <input type="text" name="otro_recurrente" id="otro_recurrente" maxlength="40" placeholder="----------">
+
+
+        <br>Telefono del recurrente: <br>
+        <input type="text" name="telefono_del_recurrente" id="telefono_del_recurrente" maxlength="40" placeholder="----------">
+
+        <br>Tipo de calzada: <br>
+        <input type="text" name="tipo_de_calzada" id="tipo_de_calzada" maxlength="40" placeholder="----------">
+
+        <br>Numero de caza: <br>
+        <input type="text" name="numero_de_caza" id="numero_de_caza" maxlength="20" placeholder="----------">
+
+        <br>id_reclamo: <br>
+        <select name="id_reclamo" id="id_reclamo">
+            <option value=""> id_reclamos</option>
+          
+
+                <option value=""></option> 
+        </select> <br>
+
+
+        <div class="ubi_boton">
+            <input type="button" value="ENVIAR" class="boton" onclick="validar();">
+            <input type="reset" value="BORRAR" class="boton">
+        </div>
+    </fieldset>
+    <a href="principal2.php"><span class="icon icon-home3">Inicio</span></a>
+</form>
+
+<?= $this->endsection() ?><?= $this->section('script') ?>
+<script type="text/javascript" src="<?= base_url() ?>/public/js/vali4.js"></script>
+<?= $this->endsection() ?>

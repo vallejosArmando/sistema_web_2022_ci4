@@ -1,0 +1,134 @@
+
+.contenido #busqueda{
+
+  width: 100%;
+  height:41px;
+/*   background-color: #fff;
+ */    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 0;
+    position: relative;    
+  z-index: 1;
+
+}
+.contenido #busqueda {
+  left: 0px;
+  right: 0px;
+	font-size: 26px;
+
+}
+.contenido #busqueda .bloque_form1{
+
+ position: relative; 
+ display: inline-block;
+    padding: 1px;
+   
+    padding-left: 11px;
+   font-size: 13px;
+
+  color: #fff;
+    border-radius:4px;
+    background-color: #cf250e;
+    border-color: #1c2024;
+
+  z-index: 1;
+}
+.contenido #busqueda .bloque_form1 .allar{
+
+ display: inline-block;
+ 
+ background:#605d64;
+ color:#fff ;
+padding:0px;
+ margin:auto;
+ font-size:18px;
+ padding-left:0px;
+ top:0;
+ bottom:0;
+}
+
+.contenido #busqueda .bloque_form1 .allar .bs{
+padding:51px;
+
+}
+ .buscador_bt2{
+
+
+   right:10px;
+  color: #fff;
+ font-size: 20px;
+ background:#b31308
+}
+
+.contenido #busqueda .bloque_form2  {
+  position: absolute;
+  display: inline-block;
+right: 0;
+text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+margin: 0;
+top: 0;
+bottom:0;
+  background: #b31308;
+
+    z-index: 1;
+
+}
+ .bloque_form2 .input_form{
+   position: relative;
+background: rgb(32, 32, 32);
+font-size: 20px;
+margin-top: 7px;
+color: rgb(47, 224, 24) ;
+   font-family: 'arial';
+    font-weight:normal;
+    letter-spacing: 1px;
+}
+
+.buscador_bt2:hover{
+ color: rgb(247, 243, 243)!important;
+ text-decoration: none;
+ background-color: #585757!important;
+}
+
+
+
+.bloque_form3 .add{
+ 
+ padding: 1px;
+ 
+  border-radius: 10px solid #ccc;
+}
+
+ .bloque_form3{
+
+
+display: inline-block;
+
+
+
+  margin-top: 6px;
+  margin-left: 5px;
+    padding: 5px;
+    text-align: left;
+   font-size: 16px;
+    color: #fff;
+    border-radius:4px;
+    background-color: #3f6791;
+    border-color: #3f6791;
+  z-index: 1;
+}
+
+  .bloque_form3:hover{
+ color: #fff;
+
+ background : #304E6D!important;
+}
+
+.select22{
+  padding-left:100px;
+}
+.valor{
+  display: inline-block;
+ 
+}

@@ -1,0 +1,141 @@
+
+ .sidebar{
+ height:100%;
+ width:230px;
+ position:fixed;
+ z-index:7;
+ top:5px;
+ left:0;
+background-color: #343a40;
+    border-color: #4b545c;
+ opacity:0.9;
+ overflow-x: hidden;
+ padding-top:60px;
+ transition:0.5s;
+}
+.sidebar.show{
+ left:-230px;
+}
+.sidebar .text{
+ color: #6c757d;
+ font-size:25px;
+ font-weight: 600;
+ line-height: 65px;
+ text-align: center;
+ background:#1e1e1e;
+letter-spacing:1px;
+}
+nav ul{
+ height:100%;
+ width:100%;
+ list-style: none;
+	color:  #c3c5c7;
+
+}
+nav ul li{
+line-height:45px;    
+border-bottom: 1px solid #6c757d;;
+}
+nav ul li:last-child{
+ border-bottom:1px solid  #6c757d;
+
+}
+
+
+
+
+.luz {
+ border-left-color: cyan;
+}
+.luz2 {
+color: cyan;
+}
+
+.perfil{
+ top:55px;
+ width: 240px;
+ height: 70px;
+color:#fff;
+ z-index: 9; border-bottom: 2px solid #6c757d;
+ border-bottom: 1px solid ;    border-color: #4b545c;
+ transition: all 0.4s ease-in-out;
+}
+
+.perfil img{
+ width:40px;
+ height:40px;
+ margin-left:15px;
+margin-top: 15px;
+padding:2px;vertical-align: middle;
+border-style: none;
+ border-radius:100px;
+
+}
+
+
+ h3{
+ position: relative!important;
+ font-size:15px!important;
+ display: inline-block!important;
+ text-align: center!important;
+ left:10px!important;
+ top :11px!important; 
+}
+
+nav ul li a{
+ position: relative;
+ color:white;
+ text-decoration: none;
+
+ padding-left:20px;
+
+ display: block;
+ width: 100%;
+ border-left: 3px solid transparent;
+}
+nav ul ul{
+ position :static;
+ display:none;
+}
+nav ul .sub_menu.show{
+   background-color: #4b545c;
+ display:block;
+}
+nav ul .serv-show.show1{
+ display:block;
+}
+nav ul ul li{
+ line-height: 30px;
+ border-bottom:none;
+} 
+nav ul ul li a{
+font-size: 17px;
+    color: #f5f3f3;
+    background: #53585b;
+    padding-left: 45px;
+    border-color: #4b545c;
+    border-bottom: 1px solid #929699;
+}nav ul ul li a:hover{
+ color:white!important;
+background: #545d64 !important;
+}
+nav ul li.active ul li a{
+ color:#e6e6e6;
+ background: #6c757d;
+
+ border-left-color: transparent;
+
+}
+
+nav ul  li a span{
+ position:absolute;
+ top:50%;
+ right:20px;
+ transform:translatey(-50%);
+ font-size:18px;
+ transition: transform 0.4s;
+}
+nav ul li a span.rotate {
+ transform:translateY(-50%)rotate(-180deg);
+
+    }   

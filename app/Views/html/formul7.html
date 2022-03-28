@@ -1,0 +1,35 @@
+<?= $this->extend('layouts/frontend6.php') ?>
+<?= $this->section('card') ?>
+
+<form action="conexion7.php" id="form1" name="form1" method="post">
+    <fieldset>
+        <legend class="leg">Form. 7 [Areas]</legend>
+
+
+
+        Nombre del area <br>
+        <input type="text" name="nombre" id="nombre" placeholder="----------"> Descripcion de area <br>
+        <input type="text" name="descripcion" id="descripcion" placeholder="----------"> sistema_reclamo: <br>
+        <select name="id_sistema_reclamo" id="id_sistema_reclamo">
+            <option value=""> sistema</option>
+          
+
+                <option ></option> 
+        </select>
+
+
+
+
+
+        <div class="ubi_boton">
+            <input type="button" value="ENVIAR" class="boton" onclick="validar();">
+            <input type="reset" value="BORRAR" class="boton">
+        </div>
+    </fieldset>
+    <a href="principal2.php"><span class="icon icon-home3">Inicio</span></a>
+</form>
+
+
+<?= $this->endsection() ?><?= $this->section('script') ?>
+<script type="text/javascript" src="<?= base_url() ?>/public/js/vali7.js"></script>
+<?= $this->endsection() ?>
